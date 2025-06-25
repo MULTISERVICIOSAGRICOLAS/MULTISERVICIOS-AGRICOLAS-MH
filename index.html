@@ -1,113 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exportadora de Dracaena Massangeana</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #333;
-    }
-    header {
-      padding: 20px;
-      text-align: center;
-      background: #e0f2f1;
-    }
-    header img {
-      max-height: 80px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #00796b;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 15px;
-      display: block;
-    }
-    nav a:hover {
-      background: #004d40;
-    }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
-    }
-    .galeria img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eeeeee;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="Logo Empresa">
-    <h1>Exportadora de Dracaena Massangeana</h1>
-  </header>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+header {
+  padding: 20px;
+  text-align: center;
+  background: #4caf50;
+  color: white;
+}
 
-  <section id="inicio">
-    <h2>Bienvenidos</h2>
-    <p>Somos una empresa costarricense dedicada a la exportación de la planta ornamental Dracaena Massangeana, garantizando calidad y compromiso.</p>
-  </section>
+header img {
+  max-height: 80px;
+}
 
-  <section id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Contamos con años de experiencia en el cultivo, manejo y exportación de plantas. Nuestro enfoque es ofrecer productos de excelente calidad a nivel internacional.</p>
-  </section>
+nav {
+  display: flex;
+  justify-content: center;
+  background: #388e3c;
+}
 
-  <section id="productos">
-    <h2>Productos</h2>
-    <p>Especializados en Dracaena Massangeana en diferentes presentaciones y tamaños, según las necesidades de nuestros clientes.</p>
-  </section>
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-weight: 600;
+}
 
-  <section id="proceso">
-    <h2>Proceso de Exportación</h2>
-    <p>Desde la siembra hasta la entrega internacional, aseguramos cada etapa del proceso con prácticas responsables y eficientes.</p>
-  </section>
+nav a:hover {
+  background: #2e7d32;
+}
 
-  <section id="galeria">
-    <h2>Galería</h2>
-    <div class="galeria">
-      <img src="planta1.jpg" alt="Dracaena 1">
-      <img src="planta2.jpg" alt="Dracaena 2">
-      <img src="planta3.jpg" alt="Dracaena 3">
-    </div>
-  </section>
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Correo: contacto@exportadoradracaena.com</p>
-    <p>Teléfono: +506 8888 8888</p>
-  </section>
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 10px 0;
+}
 
-  <footer>
-    &copy; 2025 Exportadora de Dracaena Massangeana. Todos los derechos reservados.
-  </footer>
-</body>
-</html>
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+  font-size: 14px;
+}
